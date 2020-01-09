@@ -20,3 +20,8 @@ hiddenElement.href = 'data:attachment/text,' + encodeURI(textToSave);
 hiddenElement.target = '_blank';
 hiddenElement.download = 'urls.txt';
 hiddenElement.click();
+
+
+### Run google_images_extraction.py
+#### images/food_tem directory  should already be created
+python google_images_extraction.py --urls urls.txt --output images/food_item
